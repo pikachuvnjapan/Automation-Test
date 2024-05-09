@@ -22,4 +22,7 @@ npm init playwright@latest new-project
 npx playwright test --ui
 ```
 
+## Web demo for Stripe Testcase
+ * https://stripe-payments-demo.appspot.com/
+
 
