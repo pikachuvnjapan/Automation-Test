@@ -4,15 +4,22 @@ Thư mục làm việc của Framework Playwright
 
 ## Install Framework Playwright 
 
-`npm init playwright@latest`
 
+```Shell
+# Run from your project's root directory
+npm init playwright@latest
+# Or create a new project
+npm init playwright@latest new-project
+```
 
-
-* [Read More At Here](https://playwright.dev/docs/intro)
+* [Playwright Docs](https://playwright.dev/docs/intro)
+* [Playwright Github](https://github.com/microsoft/playwright/tree/main)
 
 ## Run Test Case 
+```Shell
+# Starts the interactive UI mode
 
-`npx playwright test --ui`
-
+npx playwright test --ui
+```
 
 
