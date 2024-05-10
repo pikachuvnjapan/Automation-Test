@@ -25,4 +25,8 @@ npx playwright test --ui
 ## Web demo for Stripe Testcase
  * https://stripe-payments-demo.appspot.com/
 
-
+###  Câu lệnh record testcase đối với API - Python
+# 
+```Shell
+playwright codegen stripe-payments-demo.appspot.com
+```

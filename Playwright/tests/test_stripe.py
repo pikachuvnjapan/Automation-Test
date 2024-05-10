@@ -3,7 +3,7 @@ from playwright.sync_api import Playwright, sync_playwright, expect
 
 
 # Câu lệnh record testcase đối với python
-# playwright.exe codegen stripe-payments-demo.appspot.com
+# playwright codegen stripe-payments-demo.appspot.com
 def run(playwright: Playwright) -> None:
     browser = playwright.chromium.launch(headless=False)
     context = browser.new_context()
