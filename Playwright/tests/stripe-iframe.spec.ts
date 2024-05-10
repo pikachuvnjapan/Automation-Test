@@ -39,11 +39,13 @@ test('Input Iframe - 1', async ({ page }) => {
   // Input postal_code texbox
   await page.fill('input[name="postal_code"]','10000');
 
+ //------------------------------------------------------------------------------------------
+  // Select  country
 
-   // Select  country
- await page.click('select[name="country"]');
+
+ //await page.click('select[name="country"]');
    // Click JP
- await page.click('option[value="JP"]');
+ //await page.click('option[value="JP"]');
 
   // Select Japan
 
@@ -52,20 +54,47 @@ test('Input Iframe - 1', async ({ page }) => {
 // Select by value (e.g., "Japan"):
  //await page.locator('select.country').selectOption('JP');
  
-  
+
+ //await page.locator(':has-text("Japan")').click();
+
+
+ //await page.locator(':has-text("JP")').click();
+
+//  await page.click('select[name="country"]', { force: true });
+//  await  page.locator('select.country').selectOption({ label: 'Japan' })
+
+//   await page.locator('.country').selectOption('JP');
+
+// const stripeFrame = page.frameLocator('iframe').first();
+
+// await stripeFrame.locator('select.country').selectOption({ label: 'Japan' });
+
+
+// const iframeLocator = page.frameLocator('__PrivateStripeElement-input');
+// const country = await iframeLocator.locator('.country');
+// await country.selectOption('Japan');
+
+  // await page.click('#country > select > option:nth-child(14)');
+
+ // await page.locator('#country > select > option:nth-child(14)').selectOption('JP');
+
+
+
+ //------------------------------------------------------------------------------------------
+
 
   // Input card texbox
-   await page.fill('input[class="InputElement is-empty Input Input--empty"]','123456789');
+ //  await page.fill('input[class="InputElement is-empty Input Input--empty"]','123456789');
 
   // Input Date texbox
-    await page.fill('input[placeholder="MM / YY"]','02/24');
+  //  await page.fill('input[placeholder="MM / YY"]','02/24');
 
   // Input CVC texbox
-    await page.fill('input[name="cvc"]','137');
+  //  await page.fill('input[name="cvc"]','137');
 
 
   // Clicl Button Pay
-    await page.click('button[class="payment-button"]');
+  //  await page.click('button[class="payment-button"]');
 
 });
 
